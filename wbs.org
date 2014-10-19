@@ -1,0 +1,101 @@
+
+* nomenclatura
+  - parcela :: un terreno con un solo cultivo (unica especie)
+  - pedido especial :: son pedidos de uso de servicio de drones no
+       cubiertos por el abono del usuario.
+  - plan de servicio :: es el plan de servicio mensual del usuario,
+       incluye toda la informacion de servicios incluidos y sus
+       costos y el costo adicional por pedidos especiales de drones.
+
+
+
+* WBS
+1. sistema de gestion de terrenos
+
+   permite gestionar y visulizar informacion estatica de los terrenos
+   y sus cultivos.
+
+   1. sistema de gestion de cultivos
+      1. sistema de ingreso de muestreos manuales
+      2. ....... (etc)
+   2. sistema de visualizacion de salud
+2. sistema de trazabilidad y auditoria
+   provee una API (para ser usada por el resto de los modulos) que
+   permite registrar las acciones importantes o criticas, registrando
+   quién realizo la accion en qué momento y con qué parametros.
+3. sistema de gestion de dispositivos y servicios externos
+
+   permite hacer ABM de los dispositivos conocidos por el sistema, o
+   sea: maquinaria agricola, sistemas de drones, sistemas de
+   estaciones meteorologicas
+4. sistema de facturacion
+
+   controla el consumo realizado por los usuarios; controla los
+   abonos; controla las facturas y pagos.
+
+   1. sistema de gestion de abonos
+   2. sistema de contabilidad de consumos
+   3. sistema de emision de facturas
+   4. sistema de control de pagos recibidos
+   5. sistema de emision de pagos por uso de plan maestro
+5. sistema de gestion de usuarios
+
+   1. sistema de ABM de usuarios
+   2. sistema de gestion de perfiles
+6. sistema de ejecucion de plan maestro
+
+   planifica las acciones a ejecutar segun los parametros del terreno
+   y el plan maestro, e invoca al sistema de actuacion para llevar a
+   cabo dichas acciones. Dado que este sistema es intensivo en
+   computo, se debe considerar que sea escalable y soporte grandes
+   volumenes de ejecucion.
+7. sistema de monitoreo y analisis
+
+   recaba informacion de los sistemas de drones y estaciones
+   meteorologicas, realiza un analisis de estos datos y calcula el
+   estado de salud de los cultivos en las parcelas.
+
+   1. sistema de obtencion de imagenes
+      1. sistema periodico de actualizacion de datos
+         de acuerdo al plan del servicio del usuario (mas
+         configuraciones especiales por parcela) recopila
+         periodicamente la informacion provista por el servicio de
+         drones (la frecuencia depende tambien de estos parametros).
+      2. sistema de comunicacion con servicio de drones
+      3. sistema de seleccion de servicios de drones
+         este sistema elige, para cada combinacion de
+         {parcela, usuario, pedido especial} qué servicio de drones
+         utiliza.
+   2. sistema de monitoreo climatologico
+      (se comunica con las microestaciones del INTA)
+   3. sistema de analisis de imagenes
+      procesa las imagenes graficas y extrae de ellas los parametros
+      de temperatura, indice de biomasa, etc
+   4. sistema de calculo de salud
+      en base a los parametros actuales de una parcela y a los datos
+      agronomicos de especie de la parcela, recalcula sus valores de
+      salud.
+8. sistema de actuacion
+
+   dado un pedido de actuacion sobre una parcela (provisto por el
+   modulo de ejecucion de plan maestro), identifica a los actuadores
+   (maquinaria) en su cercania y les provee parametros de accion para
+   que se pongan en marcha y lleven a cabo las acciones. Permite
+   manejar tanto maquinaria moderna automatizada como enviar
+   informacion por email o SMS para el caso de maquinaria operada
+   manualmente.
+
+9. sistema de gestion de planes maestros
+   1. sistema de ABM de planes maestros
+   2. sistema de gestion de licencias de planes
+10. sistema de conocimiento de especies de cultivo
+
+    contiene la informacion de las especies conocidas por el sistema
+    (incluye informacion para empleo por parte del sistema de calculo
+    de salud)
+
+* todo
+** TODO punto 8 : detallar el tema de comunicacion con actuadores
+   por ejemplo es necesario para los actuadores en la region
+   patagonica
+** TODO detallar mas subitems
