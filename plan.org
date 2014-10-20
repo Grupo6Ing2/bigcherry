@@ -1,0 +1,99 @@
+* plan
+  1. fase de elaboración (2 meses)
+     1. iteración 1 (3 semanas)
+        1. relevamiento y definición de tecnologias
+        2. gestión de terrenos y monitoreo de drones (WBS 1.1, 7.1)
+     2. iteración 2 (3 semanas)
+        1. definición inicial de arquitectura de componentes y conectores
+        2. módulo de gestión de usuarios
+     3. iteración 3 (2 semanas)
+        1. módulo de trazabilidad y auditoría (WBS 2)
+  2. fase de construcción (8 meses)
+     1. iteración 4 (1 mes)
+        1. módulo de conocimiento de especies de cultivo (WBS 10)
+        2. sistema de analisis de imágenes parte 1/2 (WBS 7.3)
+     2. iteración 5 (1 mes)
+        1. sistema de analisis de imágenes parte 2/2 (WBS 7.3)
+        2. relevamiento de tipos de maquinaria disponible
+        3. módulo de gestión de dispositivos y servicios externos (WBS 3)
+     3. iteración 6 (1 mes)
+        1. módulo de actuación parte 1/2 (WBS 8)
+        2. sistema de monitoreo climatológico (WBS 7.2)
+     4. iteración 7 (1 mes)
+        1. módulo de actuación parte 2/2 (WBS 8)
+        2. sistema de cálculo de salud (WBS 7.4)
+     5. iteración 8 (1 mes)
+        1. sistema de gestión de cultivos (WBS 1.2)
+        2. sistema de visualización de salud (WBS 1.3)
+           incluye las pantalla de visualizaciones requeridas por el ministerio
+     6. iteración 9 (1 mes)
+        1. módulo de ejecución de plan maestro (WBS 6)
+     7. iteración 10 (1 mes)
+        1. módulo de gestión de planes maestros (WBS 9)
+        2. módulo de facturación parte 1/2 (WBS 4)
+     8. iteración 11 (1 mes)
+        1. módulo de facturación parte 2/2 (WBS 4)
+  3. transición (4 meses)
+     1. iteración 12 (1 mes)
+        1. desarrollo final de planes maestros del INTA
+        2. instalación productiva
+        3. desarrollo de página web del proyecto
+        4. pruebas piloto en alguna región del país
+     2. iteración 13 (1 mes)
+        1. pruebas de arquitectura a nivel nacional
+           (conectividad, disponibilidad de servidores, etc)
+        2. pruebas de stress globales
+     3. iteración 14 (1 mes)
+        1. capacitación a usuarios
+        2. pruebas piloto en varias regiones simultáneas
+     4. iteración 15 (1 mes)
+        1. lanzamiento nacional del proyecto
+        2. soporte productivo
+
+* notas internas
+  (para nosotros)
+- se puso un mes por cada iteración pero es un valor optimista.
+  habría que revisarlo bien (¿tal vez un valor más grande?)
+
+* notas
+- todas las iteraciones de implementación incluyen:
+  - diseño del módulo
+  - implementación
+  - desarrollo y ejecución de casos de test
+  - pruebas de stress
+  - corrección de errores
+- la iteración 3 (de la fase de elaboración) además de permitir
+  realizar el módulo de auditorías sirve de colchón (slack) para poder
+  completar el sistema de comunicación con el sevicio de drones en dos
+  meses en caso de que hubiera problemas.
+- al principio se había considerado dejar la parte de auditoría para
+  el final por no considerarse imprescindible para la construcción de
+  los módulos. Sin embargo, dado que la auditoría es un requerimiento
+  crítico para el sistema, es conveniente que en la construcción de
+  cada módulo se tenga presente qué se va a auditar y de qué manera.
+  Por lo tanto a medida que se construyan los módulos, el sistema de
+  auditoría debe estar presente desde el principio.
+- el sistema de analisis de imágenes y el módulo de actuación se
+  dividen en dos partes ya que de acuerdo a lo estimado no va a poder
+  terminarse en un mes.
+- en la iteración 4 se comienza con el módulo de actuación antes que
+  el módulo de gestión de dispositivos ya que el módulo de actuación
+  permite conocer mucho mejor la variedad de dispositivos y las
+  diferencias de configuración y comunicación con ellos, que permitirá
+  después realizar el módulo de gestión de dispositivos de manera
+  mucho más fácil.
+- en tres semanas no podemos hacer monitoreo y actuación (porque es
+  demasiado).
+- la 1ra iteración tiene la parte de monitoreo con drones (7.1),
+  porque la obtencion de imágenes de las parcelas gestionadas por el
+  sistema es un eje crucial de nuestro sistema (dependemos de eso para
+  el calculo del estado de salud de los cultivos y para poder ejecutar
+  los planes maestros). Dado que es muy probable que se produzcan
+  problemas o fallos tanto en la comunicacion con las APIs de drones o
+  en la disponibilidad de la red publica o privada de drones a nivel
+  nacional (y esto es critico para el proyecto), esto permite detectar
+  en forma temprana cualquier inconveniente en esta area y poder
+  realizar las gestiones correspondientes para reducir el impacto.
+
+* TODO riesgos
+1. problemas de disponibilidad de la red de drones
