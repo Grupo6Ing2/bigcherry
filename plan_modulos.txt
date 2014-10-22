@@ -1,0 +1,119 @@
+ELABORACIÓN
+
+#1 3 semanas ALEXIS
+
+- Generación de documento con tecnologías de comunicación disponibles en todo el territorio argentino
+- Generación de documento sobre APIs de comunicación con red de drones publica
+- Generación de documento sobre APIs de comunicación con red de drones privada
+- Generación de documento de riesgos
+- Generación de documento sobre comunicación con las centrales meteorológicas
+- Generación de documento sobre las tecnologías de actuadores utilizadas por los productores agropecuarios
+- Generación de documento sobre APIs de comunicación con la los servidores de almacenamiento de datos de ArSAT
+
+#2 1 semana ALEXIS
+
+- Creación de repositorios de trabajo
+- Configuración de entorno de desarrollo
+- Configuración de entorno de testing
+- Instalación/configuración de puestos de trabajo
+- Relevamiento y selección de tecnologías a utilizar en el desarrollo del proyecto
+
+#2 2 semanas ALEXIS
+
+- Pruebas de comunicación/disponibilidad con la red de drones publica
+- Pruebas de comunicación/disponibilidad con la red de drones privada
+- Pruebas de comunicación/disponibilidad con la base de datos de ArSAT
+- Pruebas de comunicación/disponibilidad con las centrales meteorológicas del INTA
+- Generación de documento de arquitectura
+
+(HITO DE ELABORACIÓN)
+
+CONSTRUCCIÓN
+
+#3 2 semenas
+
+- Módulo ABM de gestión de drones
+- Módulo de comunicación con red de drones publica
+
+(LÍMITE DE 2 MESES)
+
+#4 7 semanas ALEXIS
+- Módulo de comunicación con el sistema de base de datos de ArSAT
+- Módulo ABM de gestión de terrenos
+- Módulo ABM de gestión de usuarios y perfiles
+- Módulo de control de acceso de usuarios segun perfiles
+
+#5 2 semanas ALEXIS
+- Módulo de actualización y registro de imágenes de drones
+
+#6 3 semanas ALEXIS
+- Módulo de comunicación con centrales meteorológicas
+- Módulo ABM de gestión de centrales meteorológicas
+- Módulo de actualización y registro de datos meteorologicos
+
+#7 10 semanas ALEXIS
+- Módulo de conocimiento agronómico
+- Módulo de analisis de imágenes
+- Módulo de cálculo y actualización de salud de las plantaciones
+
+#8 3 semanas ALEXIS
+- Módulo ABM de gestión de planes maestros
+- Módulo de logueo y auditoría.
+
+#9 8 semanas ANTON
+- Módulo de compra/venta de licencias de uso de planes maestros
+- Módulo de facturación.
+
+#10 8 semanas ANTON
+- Módulo ABM de gestión de actuadores
+- Módulo de comunicación con los actuadores
+- Módulo de ejecución de plan maestro
+
+#11 3 semanas ANTON
+- Módulo de comunicación con red de drones privada
+
+#12 3 semanas ANTON
+- Generación automática de informes el ministerio de agricultura
+- Generación automática de informes para los investigadores del INTA
+- Generación automática de informes a proveedores agrícolas
+
+#13 5 semanas DIEGO
+- Módulo de alta de datos obtenidos de forma manual por agrónomos particulares
+- Módulo de monitoreo de conectividad y disponibilidad de servicios
+- Módulo de exportación de estadísticas a archivos microsoft excel
+
+#14 6 semanas DIEGO
+- Pruebas de integración entre los diferentes módulos
+- Corrección de errores detectados
+
+
+TRANSICIÓN
+
+#15 3 semanas DIEGO
+- Alta de planes maestros iniciales por parte de los investigadores del INTA
+- Desarollo del site público del proyecto con documentación, tutoriales y mesa de ayuda
+
+#16 4 semanas DIEGO
+- Pruebas de estres ante diferentes escenarios de testing
+- Pruebas de robustez y respuesta del sistema ante escenarios críticos
+- Corrección de errores detectados en las pruebas de estrés/integración
+
+#17 4 semanas DARDO
+- Pruebas piloto en una región del país
+- Corrección de errores detectados en las pruebas
+
+#18 8 semanas DARDO
+- Pruebas de conectidad a nivel nacional
+- Pruebas piloto en varias regiones simultáneas
+- Corrección de errores detectados en las pruebas
+
+#19 4 semanas DARDO
+- Instalación/configuración de un sistema de tickets para mesa de ayuda y reporte de errores/incidentes
+- Capacitación a usuarios críticos/referentes sobre el uso del sistema
+
+#20 3 semanas DARDO
+- Deploy del sistema productivo
+- Lanzamiento nacional del proyecto
+
+#21 4 semanas DARDO
+- Tareas iniciales de mantenimiento productivo
