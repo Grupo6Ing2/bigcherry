@@ -17,7 +17,7 @@
 * WBS Producto
 1. módulo de gestión de terrenos
 
-   permite gestionar y visulizar información estatica de los terrenos
+   permite gestionar y visualizar información estática de los terrenos
    y sus cultivos.
    1. sistema de gestión de terrenos
    2. sistema de gestión de cultivos
@@ -67,8 +67,8 @@
          configuraciones especiales por parcela) recopila
          periodicamente la información provista por el servicio de
          drones (la frecuencia depende tambien de estos parámetros).
-      2. sistema de comunicacion con servicio de drones
-      3. sistema de seleccion de servicios de drones
+      2. sistema de comunicación con servicio de drones
+      3. sistema de selección de servicios de drones
          este sistema determina, para cada combinación de
          {parcela, usuario, pedido especial} qué servicio de drones
          utilizar.
@@ -84,7 +84,7 @@
 8. módulo de actuación
 
    dado un pedido de actuación sobre una parcela (provisto por el
-   modulo de ejecución de plan maestro), identifica a los actuadores
+   módulo de ejecución de plan maestro), identifica a los actuadores
    (maquinaria) en su cercanía y les provee parámetros de acción para
    que se pongan en marcha y lleven a cabo las acciones. Permite
    manejar tanto maquinaria moderna automatizada como enviar
@@ -95,12 +95,12 @@
       elige de acuerdo a los pedidos de actuación a realizar, escoge
       los dispositivos más cercanos al terreno objetivo y el scheduling de
       ejecución de las acciones.
-   3. sistema de traduccion de mensajes para maquinaria
-      en base a un formato estandar de pedido de actuación (con puntos
+   3. sistema de traducción de mensajes para maquinaria
+      en base a un formato estándar de pedido de actuación (con puntos
       GPS, valores en litros de sustancia a aplicar, etc), los
       traduce a un formato que puede entender cada modelo de
       maquinaria (por ejemplo secuencias de movimientos) o que pueda
-      ser leido por un usuario (para el caso de actuaciones manuales).
+      ser leído por un usuario (para el caso de actuaciones manuales).
 9. módulo de gestión de planes maestros
    1. sistema de ABM de planes maestros
    2. sistema de gestión de licencias de planes
@@ -120,7 +120,7 @@
 3. relevamiento de tipos de maquinaria disponible
 
 * todo
-** DONE punto 8 : detallar el tema de comunicacion con actuadores
+** DONE punto 8 : detallar el tema de comunicación con actuadores
    por ejemplo es necesario para los actuadores en la region
    patagonica
 ** TODO ver bien la relación entre el ejecutor del PM y el actuador

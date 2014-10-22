@@ -1,7 +1,7 @@
 * plan
   1. fase de elaboración (2 meses)
      1. iteración 1 (3 semanas)
-        1. relevamiento y definición de tecnologias
+        1. relevamiento y definición de tecnologías
         2. gestión de terrenos y monitoreo de drones (WBS 1.1, 7.1)
      2. iteración 2 (3 semanas)
         1. definición inicial de arquitectura de componentes y conectores
@@ -11,9 +11,9 @@
   2. fase de construcción (8 meses)
      1. iteración 4 (1 mes)
         1. módulo de conocimiento de especies de cultivo (WBS 10)
-        2. sistema de analisis de imágenes parte 1/2 (WBS 7.3)
+        2. sistema de análisis de imágenes parte 1/2 (WBS 7.3)
      2. iteración 5 (1 mes)
-        1. sistema de analisis de imágenes parte 2/2 (WBS 7.3)
+        1. sistema de análisis de imágenes parte 2/2 (WBS 7.3)
         2. relevamiento de tipos de maquinaria disponible
         3. módulo de gestión de dispositivos y servicios externos (WBS 3)
      3. iteración 6 (1 mes)
@@ -64,7 +64,7 @@
   - corrección de errores
 - la iteración 3 (de la fase de elaboración) además de permitir
   realizar el módulo de auditorías sirve de colchón (slack) para poder
-  completar el sistema de comunicación con el sevicio de drones en dos
+  completar el sistema de comunicación con el servicio de drones en dos
   meses en caso de que hubiera problemas.
 - al principio se había considerado dejar la parte de auditoría para
   el final por no considerarse imprescindible para la construcción de
@@ -73,7 +73,7 @@
   cada módulo se tenga presente qué se va a auditar y de qué manera.
   Por lo tanto a medida que se construyan los módulos, el sistema de
   auditoría debe estar presente desde el principio.
-- el sistema de analisis de imágenes y el módulo de actuación se
+- el sistema de análisis de imágenes y el módulo de actuación se
   dividen en dos partes ya que de acuerdo a lo estimado no va a poder
   terminarse en un mes.
 - en la iteración 4 se comienza con el módulo de actuación antes que
@@ -85,14 +85,14 @@
 - en tres semanas no podemos hacer monitoreo y actuación (porque es
   demasiado).
 - la 1ra iteración tiene la parte de monitoreo con drones (7.1),
-  porque la obtencion de imágenes de las parcelas gestionadas por el
+  porque la obtención de imágenes de las parcelas gestionadas por el
   sistema es un eje crucial de nuestro sistema (dependemos de eso para
-  el calculo del estado de salud de los cultivos y para poder ejecutar
+  el cálculo del estado de salud de los cultivos y para poder ejecutar
   los planes maestros). Dado que es muy probable que se produzcan
-  problemas o fallos tanto en la comunicacion con las APIs de drones o
-  en la disponibilidad de la red publica o privada de drones a nivel
-  nacional (y esto es critico para el proyecto), esto permite detectar
-  en forma temprana cualquier inconveniente en esta area y poder
+  problemas o fallos tanto en la comunicación con las APIs de drones o
+  en la disponibilidad de la red pública o privada de drones a nivel
+  nacional (y esto es crítico para el proyecto), esto permite detectar
+  en forma temprana cualquier inconveniente en esta área y poder
   realizar las gestiones correspondientes para reducir el impacto.
 
 * TODO riesgos
